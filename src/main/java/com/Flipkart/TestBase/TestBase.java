@@ -25,7 +25,7 @@ public class TestBase  {
 	public void setup() {
 		logger = Logger.getLogger("Framework Started");
 		PropertyConfigurator.configure("Log4j.propertiesFile");
-		logger.info("DemoQa Framework Started");
+		logger.info("Flipkart Framework Started");
 	}
 	
 	@AfterTest
@@ -52,7 +52,7 @@ public class TestBase  {
 		 System.out.println("Provide correct browser");
 	 }
 	 
-	 driver.get("https://demoqa.com/");
+	 driver.get("https://www.flipkart.com/");
 	 driver.manage().window().maximize();
 	 driver.manage().deleteAllCookies();
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -61,7 +61,7 @@ public class TestBase  {
 	@AfterMethod
 	public void end() {
 		
-		driver.quit();
+		//driver.quit();
 	}
 	
 	

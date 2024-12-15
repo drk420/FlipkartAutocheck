@@ -19,7 +19,7 @@ public class MoveUpTo extends TestBase {
 	
 	public static void by() {
 		JavascriptExecutor j = (JavascriptExecutor)driver;
-		j.executeScript("window.scrollBy(0,300)");
+		j.executeScript("window.scrollBy(0,2000)");
 	}
 	
 	
